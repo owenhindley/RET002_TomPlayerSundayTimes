@@ -6,9 +6,9 @@ function runForm() {
 	
 	function setFormActive(aActive){
 		if (aActive){
-			$("#content").addClass("active");
+			$("#widgetInner").addClass("active");
 		} else {
-			$("#content").removeClass("active");			
+			$("#widgetInner").removeClass("active");			
 		}
 	}
 
@@ -112,8 +112,8 @@ function runForm() {
 		var dobYear = parseInt(document.getElementById("form-dobYear").value);		
 		if (isNaN(dobYear) || dobYear <= 0) return highlightInvalid(document.getElementById("form-dobYear"), "You must enter a valid year.");
 		
-		var age = calcAge(dobYear + "/" + dobMonth + "/" + dobDay);
-		if (age < 18) return highlightInvalid(null, "You must be over 18 to proceed.");
+		// var age = calcAge(dobYear + "/" + dobMonth + "/" + dobDay);
+		// if (age < 18) return highlightInvalid(null, "You must be over 18 to proceed.");
 
 
 		return {
@@ -166,11 +166,12 @@ function runForm() {
 		if (aData){
 			if (aData.status == "OK"){
 				
-				var formObject = document.getElementById("formContainer");
-				formObject.parentElement.removeChild(formObject);
+				var formContainer = $("#formContainer");
+				formContainer.removeClass("active");
+				
+				var downloadLink = $("#downloadLink");
+				$(downloadLink).addClass("active");
 
-				var messageCopy = document.getElementById("messageCopy");
-				messageCopy.innerHTML = aData.data;
 
 			} else {
 				switch(aData.data){
@@ -262,6 +263,6 @@ function runForm() {
 	};
 
 	setupForm();
-
+	setFormActive(true);
 
 };

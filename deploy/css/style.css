@@ -51,6 +51,44 @@ body, html {
 	height:326px;
 
 
+	opacity: 0.5;
+	pointer-events:none;
+
+
+	-webkit-filter:blur(2px);
+	-moz-filter:blur(2px);
+	-ms-filter:blur(2px);
+	filter:blur(2px);
+
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+
+}
+
+#widgetInner.active {
+	
+	pointer-events:auto;
+
+	opacity: 1;
+	-webkit-filter:none;
+	-moz-filter:none;
+	-ms-filter:none;
+	filter:none;
+
+}
+
+#formContainer, #downloadLink {
+	position: absolute;
+	display:none;
+	pointer-events:none;
+	width:100%;
+}
+
+#formContainer.active, #downloadLink.active {
+	display:block;
+	pointer-events:auto;
 }
 
 
@@ -60,7 +98,9 @@ p {
 
 a {
 	border:none;
-	text-decoration: none;
+	text-decoration: underline;
+
+	color:#b7b7b7;
 }
 
 #detailsForm {
@@ -69,7 +109,7 @@ a {
 
 	margin-bottom: 1em;
 
-	
+
 }
 
 
@@ -205,6 +245,8 @@ input.invalid {
 	border:1px solid white;
 	margin-right:0.5em;
 	float:left;
+
+	text-decoration: none;
 }
 
 .checkbox #tcAccept.checked { background: white; }
@@ -218,10 +260,12 @@ input.invalid {
 	
 }
 
+
 .checkbox p a {
 	border-bottom:1px solid #525252;
 	padding-bottom: 0.1em;
 	color:#525252;
+	
 }
 
 #errorMessage {
@@ -316,5 +360,17 @@ input.invalid {
 	-moz-filter:none;
 	-ms-filter:none;
 	filter:none;
+}
+
+#downloadLink {
+
+	text-align: center;
+
+	margin-top:3em;
+
+}
+
+#downloadLink h3{
+	font-size: 24px;
 }
 

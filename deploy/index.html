@@ -26,24 +26,29 @@
 
 	<div id="widgetContainer">
 		<div id="widgetInner">
-			
-			<form id="detailsForm" name="detailsForm" method="POST">
-				<input type="text" name="firstName" id="form-firstName" class="inputField full" placeholder="First name" value=""/>
-				<input type="text" name="lastName" id="form-lastName" class="inputField full" placeholder="Second name" value=""/>
-				<input type="text" name="emailAddress" id="form-email" class="inputField full" placeholder="Email address" value=""/>
-				<input type="text" name="homeAddress" id="form-home" class="inputField full" placeholder="Town / City" value=""/>				
-				<input type="text" name="dobDay" id="form-dobDay" maxlength="2" class="inputField" placeholder="DD" value=""/>
-				<input type="text" name="dobMonth" id="form-dobMonth" maxlength="2" class="inputField" placeholder="MM" value=""/>
-				<input type="text" name="dobYear" id="form-dobYear" maxlength="4" class="inputField" placeholder="YYYY" value=""/>			
-				<br/>			
-			</form>
+			<div id="formContainer" class="active">
+				<form id="detailsForm" name="detailsForm" method="POST">
+					<input type="text" name="firstName" id="form-firstName" class="inputField full" placeholder="First name" value=""/>
+					<input type="text" name="lastName" id="form-lastName" class="inputField full" placeholder="Second name" value=""/>
+					<input type="text" name="emailAddress" id="form-email" class="inputField full" placeholder="Email address" value=""/>
+					<input type="text" name="homeAddress" id="form-home" class="inputField full" placeholder="Town / City" value=""/>				
+					<input type="text" name="dobDay" id="form-dobDay" maxlength="2" class="inputField" placeholder="DD" value=""/>
+					<input type="text" name="dobMonth" id="form-dobMonth" maxlength="2" class="inputField" placeholder="MM" value=""/>
+					<input type="text" name="dobYear" id="form-dobYear" maxlength="4" class="inputField" placeholder="YYYY" value=""/>			
+					<br/>			
+				</form>
 
-			<p id="errorMessage"></p>
-			<div class="checkbox">
-				<a href="#" id="tcAccept">&nbsp;</a><p>I agree to the terms and conditions</a></p>
+				<p id="errorMessage"></p>
+				<div class="checkbox">
+					<a href="#" id="tcAccept">&nbsp;</a><p>I agree to the terms and conditions</a></p>
+				</div>
+				<button id="submitButton">Submit</button>	
 			</div>
-			<button id="submitButton">Submit</button>	
 
+			<div id="downloadLink" class="">
+				<h3>Thankyou. Please click below to download your MP3.</h3>
+				<a href="audio/dummy-audio.mp3" target="_blank" id="audioDownload">Dummy Audio.mp3</a>
+			</div>
 		</div>
 
 
