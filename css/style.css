@@ -1,0 +1,299 @@
+
+body, html {
+	
+	background:black;
+
+	background-size:cover;
+	background-image:url("../images/background.jpg");
+	background-position: center top;
+
+	color:white;
+
+	font-family:"Helvetica Neue", Helvetica, sans-serif;
+	font-weight:normal;
+
+	font-size:16px;
+}
+
+
+#losttrackBanner {
+	width:276px;
+	position: absolute;
+	top:20px;
+	left:50%;
+	margin-left:-138px;
+}
+
+#bannerImg {
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+
+#widgetContainer {
+
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-left:-217px;
+	margin-top:-163px;
+	width:434px;
+	height:300px;
+	
+}
+
+#widgetInner {
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:434px;
+	height:326px;
+
+
+}
+
+
+p {
+	color:#b7b7b7;
+}
+
+a {
+	border:none;
+	text-decoration: none;
+}
+
+#detailsForm {
+	float:left;
+	width:100%;
+}
+
+
+input, textarea {
+	background:none;
+	border:none;
+	border-width:none;
+
+	display:block;
+
+
+	padding:0.5em;
+	border:1px solid white;
+	border-radius:0.2em;
+
+	box-shadow: none;
+	outline:none;
+
+	color:#b7b7b7;
+
+	margin-bottom:0.5em;
+	margin-left:0px;
+
+	width:auto;
+
+	font-size:16px;
+/*
+
+	-webkit-filter:blur(2px);
+	-moz-filter:blur(2px);
+	-ms-filter:blur(2px);
+	filter:blur(2px);*/
+
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+input.placeholder {
+	color:#525252;
+}
+
+input.show {
+	opacity: 1;
+	-webkit-filter:none;
+	-moz-filter:none;
+	-ms-filter:none;
+	filter:none;
+}
+
+::-webkit-input-placeholder {
+    color:    #525252;
+}
+:-moz-placeholder { 
+    color:    #525252;
+}
+::-moz-placeholder {
+    color:    #525252;
+}
+:-ms-input-placeholder {
+    color:    #525252;
+
+
+}
+
+
+
+input.full {
+	width:100%;
+	clear:both;
+}
+
+input.invalid {
+	border-bottom-color:red;
+}
+
+#form-dobDay, #form-dobMonth {
+	width:30px;
+	float:left;
+	margin-right:0.5em;
+}
+
+#form-dobYear{
+	width: 40px;
+	float:left;
+}
+
+#form-home {
+	resize:none;
+	overflow: auto;
+}
+
+#form-passcode {
+	text-transform: uppercase;
+}
+
+.checkbox {
+	width:100%;
+	float:left;
+	opacity: 0;
+
+	-webkit-filter:blur(2px);
+	-moz-filter:blur(2px);
+	-ms-filter:blur(2px);
+	filter:blur(2px);
+
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.checkbox.show {
+
+	opacity: 1;
+	-webkit-filter:none;
+	-moz-filter:none;
+	-ms-filter:none;
+	filter:none;
+
+}
+
+.checkbox #tcAccept {
+	width:13px;
+	height:13px;
+	display:block;
+	background:none;
+	border:1px solid white;
+	margin-right:0.5em;
+	float:left;
+}
+
+.checkbox #tcAccept.checked { background: white; }
+
+.checkbox p {
+	font-size: 12px;
+	color:#525252;
+
+
+	
+}
+
+.checkbox p a {
+	border-bottom:1px solid #525252;
+	padding-bottom: 0.1em;
+	color:#525252;
+}
+
+#errorMessage {
+	color:red;
+}
+
+#submitButton {
+	
+	float:left;
+
+	background:white;
+	color:#525252;
+
+	border:0px;
+
+	font-size: 20px;
+	/*text-transform: uppercase;*/
+
+	border-radius:0.2em;
+
+	border-top:1px solid #aeaeae;
+	border-bottom:1px solid black;
+
+	margin:0px;
+	margin-top:1em;
+
+	padding:0.5em;
+
+	font-family:"Helvetica Neue", Helvetica, sans-serif;
+	font-weight:normal;
+
+/*
+	-webkit-filter:blur(2px);
+	-moz-filter:blur(2px);
+	-ms-filter:blur(2px);
+	filter:blur(2px);*/
+
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+#submitButton.show {
+
+	opacity: 1;
+	-webkit-filter:none;
+	-moz-filter:none;
+	-ms-filter:none;
+	filter:none;
+
+}
+
+/*.acceptButton a {
+	width:100%;
+	height:40px;
+	line-height: 42px;
+	border-width:0px;
+	border:none;
+
+	pointer-events:none;
+	background:#1d1d1d;
+
+	-webkit-transition:all .5s;
+
+	margin-top:1.6em;
+
+
+	color:black;
+
+	text-decoration: none;
+	display:block;
+	text-align: center;
+
+	font-family: "Courier New", Courier, monospace, sans-serif;
+	font-weight: bold;
+}
+
+
+.acceptButton a.active {
+	background:white;
+	cursor:pointer;
+	pointer-events:auto;
+}*/
+
