@@ -79,6 +79,7 @@
 			$sanitisedUserVars["email"] = $this->getSanitisedRequestInput($postVars, "email", FILTER_SANITIZE_EMAIL);
 			$sanitisedUserVars["firstName"] = $this->getSanitisedRequestInput($postVars, "firstName", null);
 			$sanitisedUserVars["lastName"] = $this->getSanitisedRequestInput($postVars, "lastName", null);			
+			$sanitisedUserVars["city"] = $this->getSanitisedRequestInput($postVars, "city", null);			
 			$dobDay = $this->getSanitisedRequestInput($postVars, "dobDay", FILTER_SANITIZE_NUMBER_INT);
 			$dobMonth = $this->getSanitisedRequestInput($postVars, "dobMonth", FILTER_SANITIZE_NUMBER_INT);
 			$dobYear = $this->getSanitisedRequestInput($postVars, "dobYear", FILTER_SANITIZE_NUMBER_INT);

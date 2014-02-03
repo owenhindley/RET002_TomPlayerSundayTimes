@@ -21,6 +21,7 @@ function runForm() {
 				"#form-firstName",
 				"#form-lastName",
 				"#form-email",				
+				"#form-home",				
 				"#form-dobDay",
 				"#form-dobMonth",
 				"#form-dobYear"				
@@ -99,8 +100,8 @@ function runForm() {
 		var email = document.getElementById("form-email").value;		
 		if (email == "" || !isEmail(email)) return highlightInvalid(document.getElementById("form-email"), "You must enter a valid email address.");
 
-		// var homeAddress = document.getElementById("form-home").value;
-		// if (homeAddress == "") return highlightInvalid(document.getElementById("form-home"), "You must enter a UK address.");
+		var homeAddress = document.getElementById("form-home").value;
+		if (homeAddress == "") return highlightInvalid(document.getElementById("form-home"), "You must enter your town or city name");
 
 		var dobDay = parseInt(document.getElementById("form-dobDay").value);
 		if (isNaN(dobDay) || dobDay <= 0 || dobDay >= 32) return highlightInvalid(document.getElementById("form-dobDay"), "You must enter a valid day of birth.");
@@ -118,7 +119,8 @@ function runForm() {
 		return {
 			"firstName" : firstName,
 			"lastName" : lastName,
-			"email" : email,			
+			"email" : email,	
+			"city" : homeAddress,		
 			"dobDay" : dobDay,
 			"dobMonth" : dobMonth,
 			"dobYear" : dobYear		
