@@ -1,5 +1,5 @@
 
-var checkboxChecked = true;
+var checkboxChecked = false;
 
 function runForm() {
 
